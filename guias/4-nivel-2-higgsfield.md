@@ -152,7 +152,7 @@ Fases 1 a 3 iguais. Na fase 4, os assets são gerados com `tools/hf_api.py` e sa
 
 ## 6. Estilos e prompts base
 
-A galeria em [estilos/](../estilos/README.md) mostra três estilos feitos no Nível 2: **papel recortado** (B-roll), **papel creme em aula** e **cinematográfico escuro**. São modelos, não obrigação: descreva o estilo que quiser ou traga imagens de referência em `prints/`.
+As receitas abaixo (**papel recortado**, **papel recortado leve** e **cinematográfico escuro**) são modelos escritos em texto, e a galeria em [estilos/](../estilos/README.md) mostra vídeos reais do Nível 2 (profissões, lugares e imóvel, com roupa, cenário e cenas gerados por IA). São modelos, não obrigação: descreva o estilo que quiser ou traga imagens de referência em `prints/`.
 
 ### Papel recortado (preset do projeto original)
 

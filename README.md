@@ -6,7 +6,7 @@
 
 | | | |
 |---|---|---|
-| ![](estilos/imagens/MinimalSuico.jpg) | ![](estilos/imagens/papel-creme-aula.jpg) | ![](estilos/imagens/tecnico-neon.jpg) |
+| ![](estilos/imagens/MinimalSuico.jpg) | ![](estilos/imagens/nosso-08-profissoes.jpg) | ![](estilos/imagens/nosso-10-imovel.jpg) |
 
 O arquivo [CLAUDE.md](CLAUDE.md) transforma o Claude num **diretor de vídeo**: ao abrir o projeto, ele pergunta em qual nível você quer editar, confere o que falta instalar, sugere estilos e conduz cada etapa, parando para você aprovar.
 

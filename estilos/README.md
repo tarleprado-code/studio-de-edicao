@@ -28,29 +28,29 @@ Estes seis vêm com código em [src/estilos/](../src/estilos/). Abra `npm run st
 
 ---
 
-## Do projeto original: Nível 1 (Remotion)
+## Estilos dos nossos vídeos (vertical, 9:16)
 
-Quadros reais de vídeos editados com este fluxo no canal **Macks Wendhell | Inteligência Aplicada**. São **um** jeito de fazer, não o padrão.
+Quadros reais de vídeos feitos com este fluxo pelo Tarles Prado. São **um** jeito de fazer, não o padrão. Cenas de casas e de lugares foram geradas por IA; as de mapa usam o Google Earth Studio.
 
-| | |
-|---|---|
-| ![Lousa a giz](imagens/lousa-giz.jpg) | ![Editorial quente](imagens/editorial-quente.jpg) |
-| **Lousa a giz.** Quadro escuro, traço de giz e letra manuscrita, como um professor escrevendo enquanto explica. Câmera em card à esquerda. | **Editorial quente.** Tons de papel e grafite, serifa elegante, fluxos com setas finas e ilustrações de acervo. |
-| ![Dossiê claro-escuro](imagens/dossie-claro-escuro.jpg) | ![Técnico neon](imagens/tecnico-neon.jpg) |
-| **Dossiê claro-escuro.** Alterna folhas claras e fundos escuros, rótulos em caixa alta, câmera pequena no canto. Bom para análises e investigações. | **Técnico neon.** Escuro com contornos em verde e laranja, diagramas circulares, câmera à direita. |
-| ![Manuscrito colorido](imagens/manuscrito-colorido.jpg) | ![Dossiê com marca-texto](imagens/dossie-marca-texto.jpg) |
-| **Manuscrito colorido.** Elementos sobre a câmera cheia, números em blocos coloridos e anotações à mão. | **Dossiê com marca-texto.** Documento de papel, lupa, marca-texto amarelo e um mascote desenhado. |
+|  |  |  |
+|---|---|---|
+| ![Gráficos animados](imagens/nosso-01-graficos.jpg) | ![Hologramas 3D](imagens/nosso-02-hologramas.jpg) | ![Universo de partículas](imagens/nosso-03-particulas.jpg) |
+| **Gráficos animados.** Câmera em card no topo e gráficos que crescem junto com a fala. As etiquetas aparecem no momento em que a palavra é dita. | **Hologramas 3D.** Gráficos 3D flutuando sobre a cabeça, em estúdio escuro. A câmera gira devagar para dar profundidade. | **Universo de partículas.** Você recortado sobre um fundo animado de partículas; o texto aparece digitado, como num terminal. |
 
-## Do projeto original: Nível 2 (Higgsfield)
+|  |  |  |
+|---|---|---|
+| ![Cenários](imagens/nosso-04-cenarios.jpg) | ![Cards de prova e preço](imagens/nosso-05-cards-preco.jpg) | ![Mapa com divisas e setas](imagens/nosso-06-mapa-setas.jpg) |
+| **Cenários.** Você recortado sobre cenários reais (vídeos gratuitos do Pexels), com a etiqueta de cada lugar. | **Cards de prova e preço.** Cards com trechos de vídeos, nota fiscal que se escreve e etiquetas de preço que caem na fala. | **Mapa com divisas e setas.** Voo real do Google Earth Studio com contornos oficiais do IBGE e setas animadas. O crédito do Google Earth fica visível. |
 
-| | |
-|---|---|
-| ![Papel recortado](imagens/papel-recortado-broll.jpg) | ![Papel creme em aula](imagens/papel-creme-aula.jpg) |
-| **Papel recortado.** B-roll gerado na Higgsfield como diorama de papel, sem texto; os chips entram na montagem. | **Papel creme em aula.** Painel creme à esquerda, câmera à direita (70/30), cards que se montam com a fala. |
-| ![Cinematográfico escuro](imagens/cinematico-escuro.jpg) | |
-| **Cinematográfico escuro.** B-roll realista, luz baixa, tipografia discreta. | |
-| ![Papel recortado leve, aula](imagens/papel-recortado-leve.jpg) | ![Meia tela](imagens/meia-tela.jpg) |
-| **Papel recortado leve (projeto 003, harness).** Diagrama que se monta com a fala, cards com o Claude Code recriado, câmera colada em card quadrado. Ilustrações do cavalo geradas na Higgsfield no mesmo papel. | **Meia tela.** Faixa de papel à esquerda com texto 3D, câmera em altura total colada à direita, sem ampliar. Variação da tela dividida para frases-chave. |
+|  |  |  |
+|---|---|---|
+| ![Janela do Claude Code](imagens/nosso-07-claude-code.jpg) | ![Tela dividida com animações](imagens/nosso-08-profissoes.jpg) | ![Lugares com IA](imagens/nosso-09-lugares.jpg) |
+| **Janela do Claude Code.** A tela do computador recriada em cima (conversa, plano, código) e você embaixo, num card. | **Tela dividida com animações.** Em cima, uma animação do assunto; embaixo, você com roupa e cenário trocados por IA (Higgsfield), com etiqueta e selo de simulação. | **Lugares com IA.** Tela cheia, com roupa e cenário trocados por IA e a etiqueta de cada lugar entrando com um flash. |
+
+|  |
+|---|
+| ![Imóvel](imagens/nosso-10-imovel.jpg) |
+| **Imóvel.** Casa gerada por IA em cima, com etiquetas, mapa de "5 min" e preço caindo; você embaixo. Selo "imagem ilustrativa". |
 
 ---
 
@@ -61,7 +61,7 @@ Usa o estilo "terminal técnico", intensidade equilibrada.
 ```
 
 ```text
-Mistura o "papel creme em aula" com a legenda dinâmica, em vertical.
+Mistura a "tela dividida com animações" com a legenda dinâmica, em vertical.
 ```
 
 ```text
