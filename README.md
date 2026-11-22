@@ -1,5 +1,7 @@
 # Studio de edição
 
+> Fork do [Studio de edição](https://github.com/mackswendhell/studio-de-edicao), de Macks Wendhell (licença MIT, mantida neste repositório). Acrescenta ferramentas e guias do Tarles Prado, como o recorte de fundo com Robust Video Matting.
+
 **Edite seus vídeos conversando com o Claude.** Você grava e corta; o Claude assiste, entende o que você fala e monta a edição: textos animados, prints com zoom e marca-texto, tela dividida, gráficos, legendas e, se quiser, B-rolls gerados por IA.
 
 | | | |
@@ -33,7 +35,7 @@ você grava e corta → salva o vídeo e os prints em projetos/
 O jeito mais fácil: abra uma sessão **Code** no Claude e cole:
 
 ```text
-Instala o repositório https://github.com/mackswendhell/studio-de-edicao na pasta C:\dev (siga a seção "Instalação" do README).
+Instala o repositório https://github.com/tarleprado-code/studio-de-edicao na pasta C:\dev (siga a seção "Instalação" do README).
 ```
 
 O Claude clona o repositório e instala tudo, incluindo as skills gratuitas **remotion-best-practices** e **watch**. No fim, abra uma sessão nova dentro da pasta `studio-de-edicao`.
@@ -44,7 +46,7 @@ Pré-requisitos no computador: Node.js, Python 3.10+ e FFmpeg. Se faltar algum, 
 
 Se você é um agente de IA instalando este repositório, faça exatamente isto:
 
-1. Clone: `git clone https://github.com/mackswendhell/studio-de-edicao.git` na pasta indicada (padrão: `C:\dev` no Windows, `~/dev` no Mac/Linux; evite pastas do OneDrive/iCloud).
+1. Clone: `git clone https://github.com/tarleprado-code/studio-de-edicao.git` na pasta indicada (padrão: `C:\dev` no Windows, `~/dev` no Mac/Linux; evite pastas do OneDrive/iCloud).
 2. Entre na pasta e rode **`npm run instalar`**. Ele instala, nesta ordem:
    - dependências do Remotion (`npm install`);
    - transcrição local (`pip install faster-whisper`);
@@ -76,7 +78,7 @@ studio-de-edicao/
 ├─ projetos/      ← você coloca o vídeo e os prints aqui
 ├─ edicoes/       ← o vídeo pronto sai aqui
 ├─ src/           código do Remotion (exemplos de estilo + seus vídeos)
-└─ tools/         transcrição local e gerador da Higgsfield Cloud API
+└─ tools/         transcrição local, recorte de fundo (RVM) e gerador da Higgsfield Cloud API
 ```
 
 A explicação pasta por pasta está nos [primeiros passos](guias/1-primeiros-passos.md#7-entendendo-as-pastas).

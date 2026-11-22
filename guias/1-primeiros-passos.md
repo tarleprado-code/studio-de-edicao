@@ -60,7 +60,7 @@ brew install node python ffmpeg yt-dlp git
 Abra uma sessão **Code** no Claude e cole:
 
 ```text
-Instala o repositório https://github.com/mackswendhell/studio-de-edicao na pasta C:\dev (siga a seção "Instalação" do README).
+Instala o repositório https://github.com/tarleprado-code/studio-de-edicao na pasta C:\dev (siga a seção "Instalação" do README).
 ```
 
 Ele clona, instala as dependências e as duas skills gratuitas (**remotion-best-practices** e **watch**). Quando terminar, **abra uma sessão nova** do Claude dentro da pasta `studio-de-edicao`: skills novas só aparecem numa sessão nova.
@@ -71,7 +71,7 @@ Escolha uma pasta **fora** do OneDrive, iCloud ou Dropbox (a sincronização atr
 
 ```bash
 cd C:\dev
-git clone https://github.com/mackswendhell/studio-de-edicao.git
+git clone https://github.com/tarleprado-code/studio-de-edicao.git
 cd studio-de-edicao
 npm run instalar
 ```

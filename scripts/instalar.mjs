@@ -8,6 +8,8 @@ const python = process.platform === 'win32' ? 'python' : 'python3';
 const passos = [
   ['Dependências do Remotion', 'npm install --no-audit --no-fund'],
   ['Transcrição local (faster-whisper)', `${python} -m pip install faster-whisper`],
+  ['Recorte de fundo (onnxruntime, opencv, numpy)', `${python} -m pip install onnxruntime opencv-python-headless numpy`],
+  ['Modelo do recorte de fundo (RVM, 15 MB)', `${python} tools/recorte_rvm.py --baixar`],
   ['Skill remotion-best-practices', 'npx -y skills add remotion-dev/skills -s remotion-best-practices -a claude-code -y'],
   // ponytail: falha aqui costuma ser "marketplace já cadastrado"; o passo seguinte revela erro real.
   ['Marketplace da skill watch', 'claude plugin marketplace add bradautomates/claude-video', true],
