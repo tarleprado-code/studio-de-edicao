@@ -77,6 +77,7 @@ src/_shared/              primitivas: synchronized-split.tsx (obrigatória em te
 tools/transcrever.py      transcrição local com tempo por palavra (faster-whisper, gratuito)
 tools/hf_api.py           geração pela Higgsfield Cloud API (Nível 2, caminho B)
 tools/recorte_rvm.py        tira o fundo do vídeo (Robust Video Matting, local e gratuito): troca de cenário
+tools/sons.py              efeitos sonoros e trilha ambiente sintetizados (sem direitos autorais)
 ```
 
 - Numeração: `NNN. slug`, três dígitos, igual em `projetos/` e `edicoes/`. Novo projeto = maior número + 1. O prefixo numérico não entra no slug de `src/videos/` nem nos ids de composição.

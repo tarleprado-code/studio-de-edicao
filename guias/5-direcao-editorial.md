@@ -108,6 +108,16 @@ Prints são a matéria-prima mais valiosa do Nível 1: o resultado fica muito me
 - O marca-texto é semântico: cobre **exatamente** a frase citada, entra na palavra-gatilho, e acompanha o zoom do print (os dois ficam no mesmo contêiner).
 - Antes do render final, confira um quadro com o print assentado e outro com cada marca-texto completo.
 
+## 6b. Som: efeitos e trilha
+
+O som é **discreto**: ele marca o que aparece na tela, nunca compete com a voz. A voz original entra **uma única vez** (nunca somada a outra cópia do vídeo).
+
+- **Gere os sons com `tools/sons.py`**: `python tools/sons.py "projetos/NNN. slug/audio" --ambiente <duração do vídeo em segundos>`. São sintetizados no seu computador, sem arquivos de terceiros e sem problema de direitos autorais.
+- **Efeitos** (volume 0.25 a 0.5, em `<Sequence from={frame}>` com ~1,4 s): `pop` para etiquetas, `whoosh` para troca de cena, `ding` para a chamada final, `impacto` para carimbo ou palavra de peso, `caixa` para preço, `brilho` para revelação, `warp` para mergulho, `teclado` em loop para digitação.
+- **Trilha ambiente**: `ambiente.wav` com volume **0.07** sob a voz. Pode subir um pouco (até ~0.15) num momento de impacto e voltar.
+- **O som acompanha a fala, não o contrário**: o efeito entra no tempo da palavra gatilho (`palavras.json`), nunca antes.
+- **Volume final**: normalize o vídeo pronto para **−14 LUFS** (padrão do Instagram), por exemplo `ffmpeg -i video.mp4 -c:v copy -af loudnorm=I=-14:TP=-1.5:LRA=11 -c:a aac -b:a 256k saida.mp4`.
+
 ## 7. Formatos
 
 | Formato | Tamanho | Uso | Cuidados |
