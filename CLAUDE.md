@@ -14,8 +14,8 @@ Na primeira resposta da sessão, antes de qualquer outra coisa (a menos que a pe
    - **Nível 2: avançado, com Higgsfield.** Tudo do Nível 1, mais imagens e vídeos gerados por IA (B-rolls cinematográficos, ilustrações animadas, metáforas visuais) e montagem no editor da Higgsfield. Usa créditos da sua conta Higgsfield e precisa do conector conectado. Nada é gasto sem você aprovar o custo.
 
 2. Depois da escolha, **leia os guias do nível** antes de agir:
-   - Nível 1 → [guias/2-nivel-1-remotion.md](guias/2-nivel-1-remotion.md) e [guias/5-direcao-editorial.md](guias/5-direcao-editorial.md).
-   - Nível 2 → [guias/4-nivel-2-higgsfield.md](guias/4-nivel-2-higgsfield.md) e [guias/5-direcao-editorial.md](guias/5-direcao-editorial.md). No caminho B (API key), leia também o guia do Nível 1, porque a montagem é no Remotion.
+   - Nível 1 → [guias/2-nivel-1-remotion.md](guias/2-nivel-1-remotion.md), [guias/5-direcao-editorial.md](guias/5-direcao-editorial.md) e [guias/6-licoes-de-producao.md](guias/6-licoes-de-producao.md).
+   - Nível 2 → [guias/4-nivel-2-higgsfield.md](guias/4-nivel-2-higgsfield.md), [guias/5-direcao-editorial.md](guias/5-direcao-editorial.md) e [guias/6-licoes-de-producao.md](guias/6-licoes-de-producao.md). No caminho B (API key), leia também o guia do Nível 1, porque a montagem é no Remotion.
 
 3. **Confira os pré-requisitos em silêncio** e resolva o que faltar:
    - `node_modules/` existe, `python -c "import faster_whisper"` funciona e as skills `watch` e `remotion-best-practices` estão disponíveis. Se qualquer um faltar, **instale você mesmo** rodando `npm run instalar` (instala tudo isso de uma vez) e avise que as skills novas só aparecem numa **sessão nova**: peça para a pessoa reabrir o Claude nesta pasta;
@@ -48,6 +48,7 @@ Depois de assistir o vídeo, **proponha você mesmo** duas ou três direções (
 - **Prints.** Se a fala cita sites, notícias, ferramentas ou dados e não há print correspondente em `prints/`, diga exatamente quais prints fariam falta e por quê.
 - **Pontos de aprovação obrigatórios:** o `plano.md` antes de programar ou gerar qualquer coisa; os stills de revisão antes do render final; no Nível 2, o custo em créditos antes de gerar.
 - **O pedido da pessoa manda.** A direção editorial é repertório, não regra; quando ela pedir outra coisa, siga e registre no plano.
+- **Gancho nos 3 primeiros segundos.** Todo `plano.md` propõe o título que aparece de 0 a 3 s (curto, curiosidade leve, a fala confirma). Veja [guias/6-licoes-de-producao.md](guias/6-licoes-de-producao.md).
 - **Honestidade.** Se algo não ficou bom ou não é possível na ferramenta, diga e proponha alternativa.
 
 ## Regras que valem sempre
@@ -67,7 +68,7 @@ Depois de assistir o vídeo, **proponha você mesmo** duas ou três direções (
 
 ```text
 CLAUDE.md                 este arquivo
-guias/                    1 primeiros passos · 2 nível 1 · 3 manual do Remotion · 4 nível 2 · 5 direção editorial
+guias/                    1 primeiros passos · 2 nível 1 · 3 manual do Remotion · 4 nível 2 · 5 direção editorial · 6 lições de produção
 estilos/                  galeria de estilos (README.md + imagens/)
 projetos/<NNN. slug>/     video/ · prints/ · frames/ · transcricao/ · hf/ · plano.md · edit.jsx
 edicoes/<NNN. slug>/      somente entregáveis finais
@@ -80,6 +81,7 @@ tools/hf_api.py           geração pela Higgsfield Cloud API (Nível 2, caminho
 tools/recorte_rvm.py        tira o fundo do vídeo (Robust Video Matting, local e gratuito): troca de cenário
 tools/ritmo.py             corta pausas e acelera a fala (opcional): master-ritmo.mp4 + ritmo.ts e dados.ts
 tools/sons.py              efeitos sonoros e trilha ambiente sintetizados (sem direitos autorais)
+tools/ajustar_ia.py        ajusta a duração do trecho devolvido pela IA e confere a sincronia da boca
 ```
 
 - Numeração: `NNN. slug`, três dígitos, igual em `projetos/` e `edicoes/`. Novo projeto = maior número + 1. O prefixo numérico não entra no slug de `src/videos/` nem nos ids de composição.

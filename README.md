@@ -78,7 +78,7 @@ studio-de-edicao/
 ├─ projetos/      ← você coloca o vídeo e os prints aqui
 ├─ edicoes/       ← o vídeo pronto sai aqui
 ├─ src/           código do Remotion (exemplos de estilo + seus vídeos)
-└─ tools/         transcrição local, ritmo (cortar pausas), recorte de fundo (RVM), efeitos sonoros e gerador da Higgsfield Cloud API
+└─ tools/         transcrição local, ritmo (cortar pausas), recorte de fundo (RVM), ajuste de trechos da IA, efeitos sonoros e gerador da Higgsfield Cloud API
 ```
 
 A explicação pasta por pasta está nos [primeiros passos](guias/1-primeiros-passos.md#7-entendendo-as-pastas).
@@ -90,6 +90,7 @@ A explicação pasta por pasta está nos [primeiros passos](guias/1-primeiros-pa
 3. [Manual do Remotion para leigos](guias/3-manual-remotion.md): o que é, como funciona e tudo o que dá para pedir.
 4. [Nível 2: Higgsfield](guias/4-nivel-2-higgsfield.md): como conectar (conta ou API key), processo, modelos, custos e prompts.
 5. [Direção editorial](guias/5-direcao-editorial.md): o repertório de cenas, transições e cuidados que guia toda edição.
+6. [Lições de produção](guias/6-licoes-de-producao.md): título-gancho, ritmo e sincronia, troca de roupa e cenário por IA, imóveis, cuidados com IA e clientes, problemas comuns.
 
 E a [galeria de estilos](estilos/README.md) para escolher o visual.
 
