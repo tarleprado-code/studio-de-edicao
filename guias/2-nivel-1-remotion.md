@@ -53,6 +53,20 @@ O Claude conduz estas fases na ordem e **para nos pontos de aprovação**.
 4. Nomes próprios mal transcritos podem ser corrigidos no texto ("cloud" → Claude) sem mexer nos tempos.
 5. Com o conteúdo entendido, a pasta ganha um nome descritivo: `001. meu-video`.
 
+### Ritmo: cortar pausas e acelerar a fala (opcional)
+
+Só quando a pessoa pedir. O vídeo gravado continua intacto: a ferramenta cria **outro arquivo**.
+
+```bash
+python tools/ritmo.py "projetos/NNN. slug"
+```
+
+- Gera `video/master-ritmo.mp4` (sem as pausas de 0,30 s ou mais e 10% mais rápido) e, em `src/videos/<slug>/`, `ritmo.ts` (trechos mantidos e velocidade) e `dados.ts` (palavras com o início corrigido).
+- Nomes que a transcrição errou ("Cláudio" → Claude), palavras inventadas e o ponto final do vídeo (quando a gravação termina com anotações faladas) vão em `projetos/NNN. slug/ritmo.json`:
+  `{"fim": 36.7, "corrigir": {"Cláudio": "Claude"}, "remover": ["a@34.89"]}`. Também dá para passar `--fim`, `--corrigir ERRADO=CERTO` e `--velocidade`.
+- Na composição: `const {M, CORTES_NOVOS, DURACAO_FRAMES} = criarRitmo(TRECHOS, VELOCIDADE)` (de `src/_shared/ritmo.ts`). **Todo gatilho continua vindo de `palavras.json` e passa por `M()`**; a voz toca de `master-ritmo.mp4` uma única vez.
+- Cada emenda (`CORTES_NOVOS`) é um pulo na imagem: alterne um leve zoom (1,00 / 1,05) nas emendas para esconder o corte.
+
 ### 3. Planejar (ponto de aprovação)
 
 O Claude escreve `plano.md` usando a [direção editorial](5-direcao-editorial.md):

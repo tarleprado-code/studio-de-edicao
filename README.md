@@ -78,7 +78,7 @@ studio-de-edicao/
 ├─ projetos/      ← você coloca o vídeo e os prints aqui
 ├─ edicoes/       ← o vídeo pronto sai aqui
 ├─ src/           código do Remotion (exemplos de estilo + seus vídeos)
-└─ tools/         transcrição local, recorte de fundo (RVM), efeitos sonoros e gerador da Higgsfield Cloud API
+└─ tools/         transcrição local, ritmo (cortar pausas), recorte de fundo (RVM), efeitos sonoros e gerador da Higgsfield Cloud API
 ```
 
 A explicação pasta por pasta está nos [primeiros passos](guias/1-primeiros-passos.md#7-entendendo-as-pastas).
